@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script src="main.js"></script>
     <header>
         <h1>Wikipedia</h1>
     </header>
@@ -22,7 +23,7 @@
         <article>
             <h2>GELADEIRA  electrolux : Qual é o consumo mensal de uma geladeira o consumo mensal é de 35,3 kWh. itle</h2>
             <img class="img" src="imagens/geladeira jpeg">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non risus eu purus tristique bibendum.</p>
+        
             <p> Geladeira média (entre 200 e 400 litros) tem consumo mensal de 20 a 40 kWh. Geladeira grande (mais de 400 litros de capacil</p>
             Qual é o consumo de energia de uma geladeira? 
             <p> Apesar de não terem uma potência tão alta, o fato de terem que ficar ligados 24 horas por dia garante à geladeira e ao freezer o quarto lugar na lista. O seu consumo também varia muito de acordo com tamanho e tipo. Para a geladeira pode ir de 40 até 57 kWh e para o freezer varia de 48 até 54 kWh </p>
@@ -32,19 +33,31 @@
             Altura (cm) 190
             largura (cm)83,5
             profundidade (cm) 74,2
-            <p>  O CONSUMO DE UMA GELADEIRA DENTRO DE CASA 28 REAIS POR MES </p>
+            <h1>  O CONSUMO DE UMA GELADEIRA DENTRO DE CASA 28 REAIS POR MES </h1>
             MICROONDAS ELECTROLUX:  CONSUMO DE ENERGIA ELETRICA? 
             modelo MEF41
             classificaçao energetica a 
             consumo (kwh) 1.41
             eficiencia energetica(%) 54.2
             modo espera (kwh/dia)0.01
-            <p>  QUANTO CUSTA MENSAL ? </p>
+            <h1>  QUANTO CUSTA MENSAL ? </h1>
             Prazo valor mensal (rs)
             6x sem juros R$ 103,20
             5x sem juros r$ 130,50
             4x sem juros R$ 154,75
             3x sem juros r$ 206,50
+
+             
+    <h2>Paralelepípedo</h2>
+    <label for="paralelepipedoComprimento">Comprimento:</label>
+    <input type="number" id="paralelepipedoComprimento">
+    <label for="paralelepipedoLargura">Largura:</label>
+    <input type="number" id="paralelepipedoLargura">
+    <label for="paralelepipedoAltura">Altura:</label>
+    <input type="number" id="paralelepipedoAltura">
+    <button onclick="calcularVolumeParalelepipedo()">Calcular Volume</button>
+    <button onclick="calcularAreaParalelepipedo()">Calcular Área</button>
+    <p id="paralelepipedoResultado"></p>
             <p> Quais são os tamanhos de micro-ondas da Electrolux? </p> <img class="img" src="imagens/microndas.jpeg">
             <p> Micro-ondas Electrolux 20 litros (medindo aproximadamente 26,2 x 45,5 x 34,8 cm; </p>
             Micro-ondas Electrolux 31 litros (medindo aproximadamente 32,5 x 53 x 42,5 cm );
@@ -52,19 +65,45 @@
             <p>Máquina de Lavar Consul 12kg Dosagem Extra Econômica e Ciclo Edredom </p>
             0,37
             20h
-            <p>  QUANTO E CONSUMO DE ENERGIA ELETRICA? </p>
+            <h1>  QUANTO E CONSUMO DE ENERGIA ELETRICA? </h1>
             1,76 kWh 
-            <p> Qual o tamanho da máquina de lavar Consul? </p> <img class="img" src="imagens/maquina.jpeg">
+       <h2>Cone</h2>
+    <label for="coneRaio">Raio da Base:</label>
+    <input type="number" id="coneRaio">
+    <label for="coneAltura">Altura do Cone:</label>
+    <input type="number" id="coneAltura">
+    <button onclick="calcularVolumeCone()">Calcular Volume</button>
+    <button onclick="calcularAreaCone()">Calcular Área</button>
+    <p id="coneResultado"></p>
+
+
+            <h1> Qual o tamanho da máquina de lavar Consul? </h1> <img class="img" src="imagens/maquina.jpeg">
             <p> Especificações técnicas 
                 Propriedade Especificação
                 Altura      58.0 (cm)
                 Largura     67(cm)    
                 Profundidade 72 (cm)
-                peso         40 (cm) 
-                <p> TELEVISÃO SAMSUNG? Quanto de energia gasta uma TV Samsung? </p> 
+                peso         40 (cm) </p>
+
+                <h2>Cubo</h2>
+    <label for="cuboLado">Lado do Cubo:</label>
+    <input type="number" id="cuboLado">
+    <button onclick="calcularVolumeCubo()">Calcular Volume</button>
+    <button onclick="calcularAreaCubo()">Calcular Área</button>
+    <p id="cuboResultado"></p>
+                <h1> TELEVISÃO SAMSUNG? Quanto de energia gasta uma TV Samsung? </h1> 
                 <img class="img" src="imagens/televisao.jpeg">
+
+                  <h2>Cilindro</h2>
+    <label for="cilindroRaio">Raio da Base:</label>
+    <input type="number" id="cilindroRaio">
+    <label for="cilindroAltura">Altura do Cilindro:</label>
+    <input type="number" id="cilindroAltura">
+    <button onclick="calcularVolumeCilindro()">Calcular Volume</button>
+    <button onclick="calcularAreaCilindro()">Calcular Área</button>
+    <p id="cilindroResultado"></p>
                 
-                <p>TV 4K</p>
+                <h1>TV 4K</h1>
                 Consumo médio em modo ativo        130 Watts
         
                 Consumo médio em modo de espera     0,5 Watts
@@ -72,53 +111,42 @@
 
                 Watts por polegada                   1,70                       
                 Valor médio mensal                  R$ 19,50
-                 <t></t> Tamanho ideal de smart TV Samsung
+                 <h2>Tamanho ideal de smart TV Samsung </h2>
                  Tamanho da tela      Distância focal
                  55 polegadas         1,7 metro
                  65 polegadas         2 metros
                  75 polegadas         2,3 metros
                  85 polegadas         2,6 metros 
-                 <t></t> <h3>CHUVEIRO  LORENZENTTI: CONSUMO MENSAL ?</h3>
+
+                 
+                 <h2>CHUVEIRO  LORENZENTTI: CONSUMO MENSAL ?</h2>
                  <img class="img" src="imagens/chuveiro.jpeg">
                  <p> Consumo: O Produto possui consumo mínimo médio mensal de 11,8 KWh para um banho de aproximadamente 8 minutos. </p>
-                 <p> CONSUMO DE ENERGIA ELÉTRICA ? </p>
+                 <h1> CONSUMO DE ENERGIA ELÉTRICA ? </h1>
                  <p>Ela é expressa em Watts, sendo W o seu símbolo. As potências máximas usuais dos Chuveiros Lorenzetti são 3200 W, 4500 W, 5500 W, 6800 W e 7500 WC. </p>
-                 <p> CONSUMO DE ENERGIA ELÉTRICA ? </p>
+                 <h1> CONSUMO DE ENERGIA ELÉTRICA ? </h1>
                  <p> Ela é expressa em Watts, sendo W o seu símbolo. As potências máximas usuais dos Chuveiros Lorenzetti são 3200 W, 4500 W, 5500 </p>
                  Fabricante    lorenzentti
                  comprimento   17,3 centimentro
                  largura       16,9 centimentro 
                  Altura        19,1 centimrntro 
                  fabricante    lorenzentti
+<h2>Esfera</h2>
+    <label for="esferaRaio">Raio da Esfera:</label>
+    <input type="number" id="esferaRaio">
+    <button onclick="calcularVolumeEsfera()">Calcular Volume</button>
+    <button onclick="calcularAreaEsfera()">Calcular Área</button>
+    <p id="esferaResultado"></p>
 
-
-
-
-
-
-
-
-            
-            
-            
-
-            
-        
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
+    <h1>Calculadora de Consumo de Energia Elétrica</h1>
+    <form>
+        <label>Potência (W): <input type="number" id="potencia"></label><br>
+        <label>Tempo de uso (horas por dia): <input type="number" id="tempo"></label><br>
+        <label>Período de uso (dias por mês): <input type="number" id="periodo"></label><br>
+        <label>Taxa de consumo (R$/kWh): <input type="number" id="taxa"></label><br>
+        <button type="button" onclick="calcularConsumo()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
 
      
     <footer>
